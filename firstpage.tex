@@ -1,0 +1,28 @@
+\documentclass[a4paper,12pt,twoside]{report}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{natbib}
+
+\begin{document}
+
+\chapter*{Vancouver bibliography style with authoryear style citations}
+
+I modified a bibliography style compatible with natbib package to include vancouver style references. 
+The motivation behind this was to submit an article for the journal Computers and Chemical Engineering which asks for an \emph{authoryear} citation style in conjunction with vancouver style reference lists.
+\\
+\\
+This is a journal article on drop shapes: \cite{bhutani2013determination}.
+\\
+The same article \citep{bhutani2013determination} can also be cited in parenthesis.
+\\
+\\
+This is an awesome book on population balance modelling by Prof. Ramkrishna: \cite{ramkrishna2000population}.
+\\
+\\
+People are welcome to add conference proceedings, thesis and other references here to test them.
+Please feel free to improve and contribute.
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{vancouver-authoryear}
+\bibliography{references}
+
+\end{document}
